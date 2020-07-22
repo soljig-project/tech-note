@@ -53,7 +53,7 @@ if keyword != '':
     # 오늘 게시글 개수, 게시글 url 모음, 오늘 게시글 시간대별 개수 분포
     today_post_count, post_urls, time_dict = 0, [], dict()
 
-    print('[1] 자동 스크롤 다운 + 약 100개 게시글 URL 수집 중')
+    print('[1] 자동 스크롤 다운 + 게시글 URL 수집')
     html = browser.page_source
     soup = BeautifulSoup(html, 'html.parser')
 
@@ -71,7 +71,7 @@ if keyword != '':
     # 최근 게시물이 검색되는 경우 최근 게시물도 추가 크롤링
     if not check_instagram_hide_contents:
         scroll_count = 0
-        while scroll_count < 5:
+        while scroll_count < 4:
             html = browser.page_source
             soup = BeautifulSoup(html, 'html.parser')
             posts = soup.select('#react-root > section > main > article > div:nth-child(3) div.v1Nh3.kIKUG > a')
