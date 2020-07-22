@@ -1,0 +1,21 @@
+{
+	"keyword": "광화문",
+	"crawling_date": "2020-07-20",
+	"crawling_post_count": 101,
+	"today_post_count": 67,
+	"keyword_score": 66.337,
+	"today_post_distribution_group_by_time": {
+		"0": 13,
+		"11": 10,
+		"10": 12,
+		"9": 8,
+		"8": 9,
+		"7": 2,
+		"6": 1,
+		"5": 1,
+		"3": 4,
+		"2": 3,
+		"1": 4
+	},
+	"unable_to_search_more_posts": false
+}
